@@ -1,8 +1,10 @@
 const express = require('express');
 const path = require('path');
 const db = require('./config/connection');
+// Import the ApolloServer class
 const { ApolloServer } = require('apollo-server-express');
 
+// Import the two parts of a GraphQL schema
 const { typeDefs, resolvers } = require('./schemas'); //keep
 const db = require('./config/connection'); //keep
 
@@ -34,4 +36,5 @@ db.once('open', () => {
 })
 };
 
+// Call the async function to start the server
 startApolloServer();
