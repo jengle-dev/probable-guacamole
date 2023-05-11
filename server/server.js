@@ -3,6 +3,7 @@ const path = require('path');
 const db = require('./config/connection');
 // Import the ApolloServer class
 const { ApolloServer } = require('apollo-server-express');
+const { authMiddleware } = require('./utils/auth');
 
 // Import the two parts of a GraphQL schema
 const { typeDefs, resolvers } = require('./schemas'); //keep
@@ -13,6 +14,7 @@ const app = express();
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  context: authMiddleware
 });
 
 app.use(express.urlencoded({ extended: false })); //updated to false
@@ -38,3 +40,5 @@ db.once('open', () => {
 
 // Call the async function to start the server
 startApolloServer();
+
+//complete 5/10/2023
