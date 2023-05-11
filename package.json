@@ -13,11 +13,16 @@
   "author": "Jennifer Engle",
   "license": "ISC",
   "dependencies": {
+    "@apollo/client": "^3.7.14",
+    "apollo": "^2.34.0",
     "apollo-server-express": "^3.6.1",
     "bootstrap": "^5.2.3",
+    "crypto": "^1.0.1",
     "express": "^4.17.2",
     "graphql": "^16.2.0",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.0.2",
+    "nodemon": "^2.0.22",
     "react-bootstrap": "^2.7.4"
   },
   "devDependencies": {
