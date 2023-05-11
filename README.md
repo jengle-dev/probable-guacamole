@@ -1,4 +1,5 @@
 # RESTful API to GraphQL Refactor Project
+
 ### MERN Stack
 Starting with a functioning Google Books API search engine built with a RESTful API, and refactor it to be a GraphQL API built with Apollo Server. The app was built using the MERN stack with a React front end, MongoDB database, and Node.js/Express.js server and API. 
 
@@ -25,3 +26,11 @@ The app is build using a Google Books API that allos a user to create an account
 I have gone through a lot of changes on my files and I cannot figure out what my compiler errors are for this. It seems to be deep inside the node_modules, see screenshots above. 
 
 I'm turning this in for grading. This cannot be deployed to Heroku at this time. 
+
+## Author
+Jennifer Engle: GitHub <a href="https://github.com/jengle-dev">@jengle-dev</a>
+</br>
+Email: <a href="mailto:j.engle.dev@gmail.com">j.engle.dev@gmail.com</a>
+<!-- 
+## Support
+If there are issues with the site, please reach out to me, Jennifer Engle, at j.engle.dev@gmail.com and reference the site's URL. Please provide any screenshots and behavior along with your browser information. -->
