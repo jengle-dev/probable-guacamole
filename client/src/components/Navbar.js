@@ -3,12 +3,15 @@ import { Link } from 'react-router-dom';
 import { Navbar, Nav, Container, Modal, Tab } from 'react-bootstrap';
 import SignUpForm from './SignupForm';
 import LoginForm from './LoginForm';
+import { useQuery } from '@apollo/client';
+import { GET_ME } from '../utils/queries';
+import { LOGIN_USER } from '../utils/mutations';
 
 import Auth from '../utils/auth';
 
 const AppNavbar = () => {
   // set modal display state
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(LOGIN_USER);
 
   return (
     <>
