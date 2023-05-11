@@ -18,7 +18,7 @@ function App() {
     <ApolloProvider client={client}>
     <Router>
       <div className="flex-column justify-center align-center min-100-vh bg-primary">
-        <Navbar />
+        {/* <Navbar /> */}
         <Routes>
           <Route 
             path='/' 
@@ -30,7 +30,7 @@ function App() {
           />
           <Route 
             path='*'
-            element={<h1 className='display-2'>404: Wrong page!</h1>}
+            element={ <NotFound />}
           />
         </Routes>
         </div>
