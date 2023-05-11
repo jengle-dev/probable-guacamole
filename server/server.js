@@ -7,7 +7,6 @@ const { authMiddleware } = require('./utils/auth');
 
 // Import the two parts of a GraphQL schema
 const { typeDefs, resolvers } = require('./schemas'); //keep
-const db = require('./config/connection'); //keep
 
 const PORT = process.env.PORT || 3001; //update for Apollo Server
 const app = express();

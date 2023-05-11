@@ -2,12 +2,13 @@ const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
 
-type Image {
-    url: String!
-    height: Int
-    width: Int
-    format: String
-  }
+# I think this new type is throwing an error so setting image back to String
+# type Image {
+#     url: String!
+#     height: Int
+#     width: Int
+#     format: String
+#   }
 
 type Book {
     _id: ID
@@ -16,7 +17,7 @@ type Book {
     # // saved book id from GoogleBooks
     bookId: String! #needs to be required
     title: String! #needs to be required
-    image: Image
+    image: String
     link: String
 }
 
@@ -42,7 +43,7 @@ type Auth {
 #Define which mutations are allowed to be made by the client
 type Mutation {
     # set the required fields to save a Book
-    saveBook(authors: [String!]!, description: String!, title: String!, bookId: String!, image: Image, link: String): Book
+    saveBook(authors: [String!]!, description: String!, title: String!, bookId: String!, image: String, link: String): Book
     
     # set requirements for removing a book
     removeBook(bookId: String!): User
